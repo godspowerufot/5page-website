@@ -101,18 +101,3 @@ figure.snip1390 .profile {
   margin-bottom: 10px;
   border: solid 5px #A6A57A;
 }
-
-#services {
-  animation: slide-down 2s;
-
-}
-
-@keyframes slide-down {
-  from {
-    transform: translatey(7rem);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}

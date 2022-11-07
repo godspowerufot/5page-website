@@ -89,52 +89,49 @@ nav .menubtn {
         display: none;
     }
 
+
     .sideNav {
-        display: block !important;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0%;
+        background-image: linear-gradient(to right, rgba(16, 16, 56, 0.72), rgb(46, 49, 73));
+        overflow-x: hidden;
+        transition: 0.5s ease;
+        padding-top: 60px;
+        display: none;
     }
-}
 
-.sideNav {
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0%;
-    background-image: linear-gradient(to right, rgba(16, 16, 56, 0.72), rgb(46, 49, 73));
-    overflow-x: hidden;
-    transition: 0.5s ease;
-    padding-top: 60px;
-    display: none;
-}
+    .sideNav a {
+        padding: 8px 8px 8px 40px;
+        display: block;
+        font-size: 25px;
+        font-weight: 500;
+        color: #d1d1d1;
+        transition: 0.3s;
+        text-decoration: none;
+    }
 
-.sideNav a {
-    padding: 8px 8px 8px 40px;
-    display: block;
-    font-size: 25px;
-    font-weight: 500;
-    color: #d1d1d1;
-    transition: 0.3s;
-    text-decoration: none;
-}
+    .sideNav a button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: blue;
+        font-size: 16px;
+        border-style: none;
+        font-weight: 700;
+    }
 
-.sideNav a button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: blue;
-    font-size: 16px;
-    border-style: none;
-    font-weight: 700;
-}
+    .sideNav a:hover {
+        color: white;
+    }
 
-.sideNav a:hover {
-    color: white;
-}
-
-.sideNav .closeBtn {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 20px;
-    margin-left: 50px;
+    .sideNav .closeBtn {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 20px;
+        margin-left: 50px;
+    }
 }
 
 .row {

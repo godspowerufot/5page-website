@@ -6,12 +6,10 @@
 
 body {
     background-image: linear-gradient(to right, rgba(200, 8, 207, 0.75), rgba(28, 70, 184, 0.8)), url("/photo/anh-nguyen-v-NBXj3Yv5o-unsplash.jpg");
-    overflow: hidden;
-
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 nav {
@@ -23,7 +21,7 @@ nav {
 }
 
 nav .logo {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -83,10 +81,6 @@ nav .menubtn {
 
 /* responsive navbar css */
 @media screen and (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-    }
-
     nav .menubtn {
         display: flex;
     }
@@ -94,6 +88,7 @@ nav .menubtn {
     nav .navLinks {
         display: none;
     }
+
 
     .sideNav {
         height: 100%;
@@ -136,8 +131,8 @@ nav .menubtn {
         right: 25px;
         font-size: 20px;
         margin-left: 50px;
-    }
 
+    }
 }
 
 .row {
@@ -145,6 +140,8 @@ nav .menubtn {
     justify-content: space-between;
     align-items: center;
     margin: 2% 5%;
+    animation: slide-down 2.5s;
+
 }
 
 .row .column1 {
@@ -188,16 +185,9 @@ nav .menubtn {
     .row {
         margin-top: 80px;
     }
-
-    body {
-        overflow-x: hidden;
-    }
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-    }
 
     .column1 h1 {
         font-size: 35px;
@@ -210,5 +200,26 @@ nav .menubtn {
 
     .row .column1 {
         padding: 30px;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translatey(0r);
+    }
+
+    to {
+        transform: translateY(9rem);
+    }
+
+}
+
+@keyframes slide-down {
+    from {
+        transform: translatey(7rem);
+    }
+
+    to {
+        transform: translateY(0);
     }
 }

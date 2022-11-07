@@ -27,10 +27,9 @@
             </ul>
         </div>
     </nav>
-
     <!-- responsive side navbar -->
-    <div class="sideNav">
-        <span class=" closeBtn" onclick="closeNav()"> &#10006;</span>
+    <div class="sideNav" aid="sidenav">
+        <span class="closeBtn" onclick="closeNav()"> &#10006;</span>
         <a href="/index.html">Home</a>
         <a href="./about-page.html ">About</a>
         <a href="./services.html">Services</a>
@@ -75,7 +74,14 @@
 
             </div>
 
-            <script src="./navigation.js"></script>
+            <script>
+                function openNav() {
+                    document.querySelector("#sidenav").style.width = "70%";
+                }
+                function closeNav() {
+                    document.querySelector("#sidenav").style.width = "0%";
+                }
+            </script>
 
 </body>
 

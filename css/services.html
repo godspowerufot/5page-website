@@ -97,8 +97,15 @@
 
 
     <!-- javascript to make side menu appear -->
-    <script src="./navigation.js"></script>
+    <script>
+        function openNav() {
+            document.querySelector("#sidenav").style.width = "70%";
+        }
+        function closeNav() {
+            document.querySelector("#sidenav").style.width = "0%";
+        }
 
+    </script>
 
 </body>
 
